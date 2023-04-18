@@ -1,4 +1,9 @@
-
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("./Images/nora-0.jpg") no-repeat center fixed;
+}
 
 section {
   margin: 20px;
