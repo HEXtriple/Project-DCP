@@ -1,15 +1,81 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+@media screen and (min-width: 300) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(29, 53, 87, 0.519);
 }
 
-nav {
-  background:linear-gradient(to bottom, rgba(95,95,95, 0.9),rgba(255,255,255,0));
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #8D99AE;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2B2D42;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgb(0, 0, 0) 30%,
+    transparent 30%,
+    transparent 60%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0.5) 80%,
+    transparent 80%,
+    transparent
+  );
+}
+}
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+
+  overflow-y: show;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav#top-navbar {
   color: black;
   padding: 20px;
+
+  top: 0;
+  margin-bottom: 5vw;
+
+  background-color: #EF233C;
+  opacity: 8;
+  position: relative fixed;
+
+  width: 100vw;
+  height: 30vh;
+  overflow: hidden;
+
+  border-width: 1px;
+  box-shadow: 5px 6px 7px #a8dadc, 10px 15px 15px #1d3557;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 46px;
 }
 nav ul {
+  font-size: 2rem;
+  display: block;
+  margin: 4vw;
+  float: left;
+  
+  text-align: center;
+  text-decoration: underline;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -20,7 +86,8 @@ nav li {
 }
 
 nav a {
-  color: black;
+  color: #a8dadc;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
@@ -29,7 +96,15 @@ nav a {
 
 nav a:hover {
   color: #ff0000;
+  
 }
 
-/* Path: Project-DCP\css\defaultStyle.css */
+#expandable-menu{
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+}
 
