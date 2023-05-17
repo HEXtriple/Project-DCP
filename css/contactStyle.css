@@ -12,3 +12,19 @@ article{
     margin-bottom: 50px;
     text-align: center;
 }
+
+div#contact-form{
+    width: auto;
+    margin: 10% auto;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 1vw;
+    border-left: none;
+    border-right: none;
+    background-color: #EDF2F4;
+    overflow: hidden;
+    position: relative;
+}
+
+div#form-field{
+}

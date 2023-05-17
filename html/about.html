@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="../css/defaultStyle.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen">
+
+    <link href="../css/aboutStyle.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>About DiKS</title>
   </head>
   <body>
-    <article>
+    <article id="short-about">
       <p>
         Danderyd is a municipality in Stockholm County, Sweden. It is one of the
         wealthiest and most educated areas in the country. It was founded in
@@ -29,5 +37,15 @@
         the red Star of Danderyd burned hotter than ever.
       </p>
     </article>
+    <form id="search-bar">
+      <input
+        type="text"
+        id="search"
+        placeholder="Couldn't find what you were looking for? Search here!"
+      />
+    </form>
+    
+    <script src="../js/search.js"></script>
+
   </body>
 </html>
