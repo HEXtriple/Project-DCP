@@ -6,44 +6,68 @@
     <link rel="stylesheet" href="./css/defaultStyle.css" />
     <link rel="stylesheet" href="./css/indexStyle.css" />
     <script src="./js/index.js"></script>
-
   </head>
   <body>
-    <header>
-      <!-- HTML -->
-<div class="menu-wrap">
-  <input type="checkbox" class="toggler">
-  <div class="hamburger"><div></div></div>
-  <div class="menu">
-    <div>
-      <div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+    <header id="top-navbar">
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./html/about.html">About</a></li>
+                <li><a href="./html/contact.html">Contact</a></li>
+                <li><a href="./html/activities.html">Activities</a></li>
+                <li><a href="./html/traffic.html">Traffic</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-      <nav id="top-navbar">
-        <h1>Danderyd: The red star of Sweden!</h1>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav id="links">
+        <h1 id="title">Danderyd: The red star of Sweden!</h1>
+        <li>
+          <a href="#home">Home</a>
+          <div class="link-window">
+            This is a window element that appears when you hover over the text
+          </div>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+          <div class="link-window">
+            This is a window element that appears when you hover over the text
+          </div>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+          <div class="link-window">
+            This is a window element that appears when you hover over the text
+          </div>
+        </li>
+        <li>
+          <a href="#activities">Activities</a>
+          <div class="link-window">
+            This is a window element that appears when you hover over the text
+          </div>
+        </li>
+        <li>
+          <a href="#traffic">Traffic</a>
+          <div class="link-window">
+            This is a window element that appears when you hover over the text
+          </div>
+        </li>
       </nav>
     </header>
-    
-    
-    <article>
-      <h1>Danderyd: The red star that shines from afar</h1>
+
+    <article id="danderyd-ad-text">
+      <h1 id="sovjet-title">Danderyd: The red star that shines from afar</h1>
 
       <div class="image-section">
-        <img src="./images/nora-0.jpg" alt="Danderyd">
+        <img src="./images/nora-0.jpg" alt="Danderyd" style="margin-top: -5%" />
       </div>
 
       <div class="speaking-bubble speaking-bubble-left">
@@ -55,10 +79,10 @@
       </div>
 
       <div class="image-section">
-        <img src="./images/samsoeviken-1.jpg" alt="Danderyd">
+        <img src="./images/samsoeviken-1.jpg" alt="Danderyd" />
       </div>
 
-      <div class="speaking-bubble speaking-bubble-right" >
+      <div class="speaking-bubble speaking-bubble-right">
         <h2>
           Danderyd: Unity in diversity, solidarity in adversity, prosperity in
           sincerity
@@ -67,49 +91,48 @@
           Danderyd is a municipality in the northern part of Stockholm County,
           with a population of about 34,000. It consists of four districts:
           Danderyd, Djursholm, Enebyberg and Stocksund. Danderyd has many
-          beautiful lakes, forests and parks, as well as historical buildings and
-          cultural attractions. You can swim, fish, hike, bike or ski in the
-          scenic surroundings, or visit the Djursholm Castle, the Ekebyhov Palace
-          or the Edsberg Manor. Danderyd also has a rich musical tradition, with
-          several choirs, orchestras and bands.
+          beautiful lakes, forests and parks, as well as historical buildings
+          and cultural attractions. You can swim, fish, hike, bike or ski in the
+          scenic surroundings, or visit the Djursholm Castle, the Ekebyhov
+          Palace or the Edsberg Manor. Danderyd also has a rich musical
+          tradition, with several choirs, orchestras and bands.
         </p>
       </div>
 
       <div class="image-section">
-        <img src="./images/danderyd.jpg" alt="Danderyd">
+        <img src="./images/danderyd.jpg" alt="Danderyd" />
       </div>
 
-      
-      <div class="speaking-bubble speaking-bubble-left" id="speaking-bubble-center">
-        <h1>
-          Danderyd: no classes, no masses, no worries, no hurries, just peace and
-          ease, with public transport of Danderyd
-        </h1>
-        <p>
-          Living in Danderyd also means having easy access to the city center of
-          Stockholm, as well as other nearby towns and suburbs. Danderyd is well
-          connected by public transport, with buses, trains and metro lines. You
-          can reach Stockholm Central Station in about 15 minutes by metro from
-          Mörby Centrum, which is the largest shopping mall in Danderyd. Mörby
-          Centrum also has a library, a cinema, a gym and various services and
-          shops. You can also find other smaller shopping areas and local markets
-          in Danderyd.
-        </p>
-  
-    
-      </div>
-
-      <div class="speaking-bubble speaking-bubble-right" id="speaking-bubble-center">
-        <h1>
-          Danderyd: The people’s paradise, where everything is nice and fair in
-          price
-        </h1>
-        <p>
-          Living in Danderyd is a wonderful experience that offers you the best of
-          both worlds: nature and culture, tranquility and convenience, history
-          and modernity. If you are looking for a place to call home in Stockholm
-          County, you should definitely consider living in Danderyd.
-        </p>
+      <div id="row">
+        <div class="speaking-bubble speaking-bubble-center">
+          <h1>
+            Danderyd: no classes, no masses, no worries, no hurries, just peace
+            and ease, with public transport of Danderyd
+          </h1>
+          <p>
+            Living in Danderyd also means having easy access to the city center
+            of Stockholm, as well as other nearby towns and suburbs. Danderyd is
+            well connected by public transport, with buses, trains and metro
+            lines. You can reach Stockholm Central Station in about 15 minutes
+            by metro from Mörby Centrum, which is the largest shopping mall in
+            Danderyd. Mörby Centrum also has a library, a cinema, a gym and
+            various services and shops. You can also find other smaller shopping
+            areas and local markets in Danderyd.
+          </p>
+        </div>
+        <div class="speaking-bubble speaking-bubble-center">
+          <h1>
+            Danderyd: The people’s paradise, where everything is nice and fair
+            in price
+          </h1>
+          <p>
+            Living in Danderyd is a wonderful experience that offers you the
+            best of both worlds: nature and culture, tranquility and
+            convenience, history and modernity. If you are looking for a place
+            to call home in Stockholm County, you should definitely consider
+            living in Danderyd.
+          </p>
+        </div>
       </div>
     </article>
 
@@ -123,13 +146,17 @@
           <h2>About Our City</h2>
           <p>Here is some information about our city.</p>
         </section>
-        <section id="services">
-          <h2>City Services</h2>
-          <p>Here is a list of services provided by our city.</p>
-        </section>
         <section id="contact">
           <h2>Contact Us</h2>
           <p>Here is our contact information.</p>
+        </section>
+        <section id="activities">
+          <h2>City Services</h2>
+          <p>Here is a list of services provided by our city.</p>
+        </section>
+        <section id="traffic">
+          <h2>Traffic Information</h2>
+          <p>Here is some traffic information about our city.</p>
         </section>
       </nav>
     </footer>
