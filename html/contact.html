@@ -11,7 +11,7 @@
     <title>DiKS Contact</title>
   </head>
   <body>
-    <article>
+    <article id="article-bulletpoint">
       <h1>Contact</h1>
       <p>
         The easiest way to contact the municipality is via our e-services. You
@@ -31,18 +31,16 @@
         <li>Website: https://www.danderyd.se/1</li>
         <li>Address: Sveavagen 42, Danderyd, Stockholm County, SE 182 62 1</li>
         <li>Phone: 08-568 910 00 2</li>
+        <li>Social Media: You can follow Danderyd Municipality on, <br /></li>
+        <li><a href="facebook.com/danderydskommun"> Facebook</a></li>
+        <li><a href="instagram.com/danderydskommun"> Instagram</a></li>
         <li>
-          Social Media: You can follow Danderyd Municipality on, <br />
-            <li><a href="facebook.com/danderydskommun"> Facebook</a></li>
-            <li><a href="instagram.com/danderydskommun"> Instagram</a></li>
-            <li>
-              <a href="linkedin.com/company/danderyds-kommun"> LinkedIn</a>
-            </li>
+          <a href="linkedin.com/company/danderyds-kommun"> LinkedIn</a>
         </li>
       </ul>
     </article>
-
-    <h2>Additional Help</h2>
+    <div id="addional-help">
+    <h1>Additional Help</h1>
     <h2>Contact by telephone</h2>
     <p>
       You can contact the municipality by telephone on weekdays between 8-16.30.
@@ -65,8 +63,15 @@
       want to search the digital drawing archive or if you need help in a matter
       concerning the municipality.
     </p>
+  </div>
+  <div id="eyecandy-row">
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=18.038330078125%2C59.39863417896006%2C18.0487060546875%2C59.40351782182688&amp;layer=mapnik&amp;marker=59.401076008708%2C18.04351806640625"
 
-    //openstreetmap of mörby
+      style="border: 1px solid black"
+    ></iframe>
+    <img src="../Images/KontaktSida.png"   alt="Lord "/>
+  </div>
     
 
     <h2>Addresses -- Letters</h2>
@@ -77,8 +82,9 @@
       <br />
       182 05 Djursholm
     </p>
-    <img href="../Images/KontaktSida.png" height="500px" width="500px">
-    //contact us!
+
+    
+
     <div id="contact-form">
       <form action="contact.php" method="post">
         <h2>Contact Us</h2>
@@ -101,6 +107,7 @@
         <div class="form-field">
           <input type="submit" value="Send" />
         </div>
+      </form>
     </div>
   </body>
 </html>
