@@ -12,7 +12,7 @@ article {
   margin: auto;
   background: lightblue;
   padding: 20px;
-  animation: slidein 2s ease-out;
+  
 }
 
 @media (max-width: 600px) {

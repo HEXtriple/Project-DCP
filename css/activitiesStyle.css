@@ -1,42 +1,28 @@
 
-
 table#danderyd-activity {
-  /* Set the width of the table to 80% of the parent element */
   width: 80%;
-  /* Center the table horizontally */
   margin: 0 auto;
-  /* Add some space between the table and other elements */
   margin-bottom: 20px;
-  /* Collapse the borders of the table cells */
   border-collapse: collapse;
 }
 
 table#danderyd-activity th {
-  /* Set the background color of the header cells to light blue */
   background-color: #b0e0e6;
-  /* Set the text color of the header cells to white */
   color: white;
-  /* Set the font size of the header cells to 18px */
   font-size: 18px;
-  /* Set the font weight of the header cells to bold */
   font-weight: bold;
-  /* Set the padding of the header cells to 10px */
   padding: 10px;
 }
 
 table#danderyd-activity td {
-  /* Set the border of the data cells to 1px solid black */
   border: 1px solid black;
-  /* Set the padding of the data cells to 10px */
   padding: 10px;
 }
 
 table#danderyd-activity tr:nth-child(even) {
-  /* Set the background color of the even rows to light gray */
   background-color: #f0f0f0;
 }
 
 table#danderyd-activity tr:nth-child(odd) {
-  /* Set the background color of the odd rows to white */
   background-color: white;
 }
