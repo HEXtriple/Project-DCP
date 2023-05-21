@@ -9,9 +9,12 @@ article#danderyd-ad-text{
     justify-items: center;
     overflow: hidden;
     width: 100vw;
-    margin: 2rem 0;
+    height: auto;
+    margin-top: 2rem 0;
     text-align: center;
-    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+    
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+
     background: linear-gradient(to right, #EDF2F4, #8E9EAB);
 }
 
