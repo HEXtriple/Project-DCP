@@ -1,61 +1,35 @@
-var form = document.getElementById("contact-form");
-var name = form.elements["name"];
-var email = form.elements["email"];
-var subject = form.elements["subject"];
-var message = form.elements["message"];
+let email = document.getElementById("email");
+let inputName = document.getElementById("name");
+let subject = document.getElementById("subject");
+let message = document.getElementById("message");
+const REGEX = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-function validateEmail(email) {
-  var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-  return regex.test(email);
+function formValidation(){
+    checkIfEmpty(email);
+    emailCheck(email);
+    checkIfEmpty(inputName);
+    checkIfEmpty(subject);
+    checkIfEmpty(message);
 }
 
-function showError(field, message) {
-  var error = document.createElement("span");
-  error.className = "error";
-  error.textContent = message;
-
-  field.parentNode.appendChild(error);
+function emailCheck (element) {
+    
+    if (element.value.match(REGEX)) {
+        element.style.border = "solid green 0.4vw"
+  
+    }else{
+        element.style.border = "solid red 0.4vw"
+        element.placeholder = "Invalid email adress"
+        alert("Invalid email adress")
+    }
 }
 
-function removeError(field) {
-  var lastChild = field.parentNode.lastChild;
-
-  if (lastChild.tagName === "SPAN" && lastChild.className === "error") {
-    field.parentNode.removeChild(lastChild);
-  }
+function checkIfEmpty(element){
+    if(element.value.trim() == ""){
+      element.style.border = "solid red 0.4vw"
+      element.placeholder = "Space is empty"
+    }else{
+      element.style.border = "solid green 0.4vw"
+      element.placeholder = "Please input here"
+    }
 }
-
-form.addEventListener("button", function (event) {
-  event.preventDefault();
-
-  var valid = true;
-
-  removeError(name);
-  removeError(email);
-  removeError(subject);
-  removeError(message);
-
-  if (name.value.trim() === "") {
-    showError(name, "Du måste ange ditt namn.");
-    valid = false;
-  }
-
-  if (email.value.trim() === "" || !validateEmail(email.value)) {
-    showError(email, "Du måste ange en giltig e-postadress.");
-    valid = false;
-  }
-
-  if (subject.value.trim() === "") {
-    showError(subject, "Du måste ange ett ärende.");
-    valid = false;
-  }
-
-  if (message.value.trim() === "") {
-    showError(message, "Du måste ange ett meddelande.");
-    valid = false;
-  }
-
-  if (valid) {
-    alert("Formuläret är giltigt och kan skickas.");
-  }
-});
