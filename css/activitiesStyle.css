@@ -1,9 +1,17 @@
+body{
+  background-image: url("../Images/MörbySilhoutteAI.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+
+  overflow-x: hidden;
+}
 
 
 table#danderyd-activity {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  width: 80vw;
+  margin: 10vw;
   border-collapse: collapse;
 }
 

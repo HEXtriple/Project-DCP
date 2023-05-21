@@ -6,12 +6,7 @@ body {
   overflow-y: show;
   overflow-x: hidden;
 
-  /*background image*/
-  background-image: url("../Images/MörbySilhoutteAI.jpg");
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
+ 
 }
 
 article#article-bulletpoint {
